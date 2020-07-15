@@ -13,11 +13,15 @@ A database containing tables of all the csv files was created in pgAdmin4. This 
 
 ![Entity Relationship Diagram (ERD)](EmployeeDB.png)
 
-After understanding the relationship between datasets, analysis was executed by using join methods to combine data across multiple sheets when given certain criteria. the first part of this challenge required me to create a list of retiring employees with their current title and salary included. The criteria for retired employees are as follows;born between 1952 - 1955. When filtering through the data to determine retiring employees, another criteria had to be utilized to confirm that the employee was still employed by the company. Without this extra criteria the analysis would be inaccurate. An inner join between the employees and titles datasets allowed the proper information to be shown in one dataset. However, an issue existed when this process created multiple data entries for employees who have held multiple titles. In order to correct the multiple entries a partition method was used on the newly created table.
+#### Part 1
+After understanding the relationship between datasets, analysis was executed by using join methods to combine data across multiple sheets when given certain criteria. The first part of this challenge required me to create a list of retiring employees with their current title and salary included. The criteria for retired employees are as follows; born between 1952 - 1955. When filtering through the data to determine retiring employees, another criteria had to be utilized to confirm that the employee was still employed by the company. Without this extra criteria the analysis would be inaccurate. An inner join between the employees and titles datasets allowed the proper information to be shown in one dataset. However, an issue existed when this process created multiple data entries for employees who have held multiple titles. In order to correct the multiple entries a partition method was used on the newly created table.
 
+#### Part 2
 For the second part of this challenge, a data table for mentorship eligible candidates was created based on birth date criteria of January 1, 1965 to December 31, 1965. In this analysis, two inner join methods were used to combine employee data, title data, and department employee data. After creating this new data set, it was noticed that there were duplicate values again due to the nature of the inner join method. A partition was once again executed on the data table in order to remove any duplicate entries. 
 
 ### Analysis Results
+
+#### Part 1
 The results for the first deliverable as described above are shown below. This is the number of potential candidates eligible for retirement by title.
 
     - Assistant Engineer: 251
@@ -32,4 +36,5 @@ The results for the first deliverable as described above are shown below. This i
 
 Please reference the correct_count_by_title.csv for these results and correct_retire_by_title.csv for a complete list of these employees.
 
+#### Part 2
 The results for the second deliverable can be found in the Mentorship_Eligible.csv file. This includes a table with **_1549_** employee names and titles that are eligible for the mentorship program. Potentially we can look into the hire date of these employees to determine which have been employed the longest and are determined to be most experienced for the mentorship program.
