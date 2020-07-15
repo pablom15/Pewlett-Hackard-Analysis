@@ -28,7 +28,7 @@ The results for the first deliverable as described above are shown below. This i
     - Staff: 2022
     - Technique Leader: 1609
   
-    -  **Total: _33118_**
+   **Total: 33118**
 
 Please reference the correct_count_by_title.csv for these results and correct_retire_by_title.csv for a complete list of these employees.
 
